@@ -1,0 +1,325 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+h1 {
+    font-family: 'Volkhov', serif;
+    color: white;
+}
+h2 {
+    font-family: 'Volkhov', serif;
+    text-align: center;
+}
+li,
+p,
+a {
+    font: 1.618rem 'Montserrat', sans-serif;
+}
+pre,
+code,
+kbd {
+    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff',
+}
+
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+.wrapper {
+    max-width: 1500px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 4px;
+    border-style: solid;
+    background-color: #ffd080;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    color: #2432ff;
+    text-align: center;
+    font-size: 2rem;
+}
+p {
+    text-align: center, justify;
+    padding: .6rem;
+    font-size: 1.2rem;
+}
+header {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    background-image: url(https://loremflickr.com/900/500/computer);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border-style: groove;
+}
+nav {
+    width: 100%;
+}
+nav>ul {
+    width: 100%;
+}
+nav li {
+    padding: .1rem;
+    width: 100%;
+    list-style: none;
+    border-style: outset;
+}
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    background-color: #ffd080;
+}
+nav a:active,
+nav a:focus,
+nav a:hover {
+    background-color: bisque;
+}
+main {
+    width: 100%;
+    padding: 1em;
+}
+.col {
+    width: 100%;
+    float: none;
+    padding-left: 1rem;
+}
+.col img {
+    width: 100%;
+    max-width: 100%;
+    padding: .4rem;
+    border-style: groove;
+}
+.img {
+    width: 90%;
+    background-color: #ffd080;
+}
+footer {
+    width: 100%;
+    padding: 1.5rem;
+}
+footer p {
+    color: blue;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a,
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    font-size: .8em;
+}
+footer li {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: .5rem, 0, 3rem, 2rem;
+    text-align: center;
+    list-style: none;
+}
+footer a:focus,
+footer a:hover {
+    background-color: pink;
+}
+@media screen and (min-width:600px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+        text-align: left;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        padding: 2em;
+    }
+    nav {
+        width: 100%;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1.5rem;
+    }
+    main {
+        width: 90%;
+        margin-top: 1.5em;
+        padding: 2rem;
+    }
+    .col {
+        width: 50%;
+    }
+    .col img {
+        width: 60%;
+        float: left;
+        margin: 10px;
+    }
+    p {
+        padding: .3rem;
+        text-align: left;
+    }
+    img {
+        width: 60%;
+    }
+    .first {
+        float: left;
+        padding-right: .5rem;
+    }
+    .second {
+        float: left;
+        padding-right: .5rem;
+    }
+    footer {
+        clear: both;
+        padding-bottom: 3.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    footer li {
+        width: 30%;
+        margin-left: 10px;
+        float: left;
+    }
+    footer p {
+        color: blue;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+/*
+    h2 {
+        font-size: 10em;
+    }
+*/
+/*
+    p {
+        font-size: 3rem;
+    }
+*/
+    header {
+        width: 100%;
+    }
+    main {
+        width: 90%;
+    }
+    nav {
+        width: 90%;
+    }
+/*
+    nav a,
+    nav a:link,
+    nav a:visited {
+        background-color: white;
+    }
+*/
+    nav li {
+        width: 20%;
+        float:left;
+    }
+   
+}
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 6.5em;
+    }
+    h2 {
+        font-size: 3.5em;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    header {
+        padding: 3.5em;
+    }
+    main {
+        width: 70%;
+        margin: 0;
+    }
+    nav {
+        width: 30%;
+        padding-top: 3.5rem;
+    }
+    nav li {
+        width: 100%;
+        border-style: none;
+        padding: .5em;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        text-align: center;
+    }
+    img {
+        width: 55%;
+    }
+    .col {
+        width: 50%;
+        margin: 0;
+    }
+    .col first {}
+    .col second {
+        float: right;
+        padding: 10px;
+    }
+    footer {
+        text-align: justify;
+        padding-left: 5rem;
+    }
+    footer p {
+        font-size: 1.8rem;
+    }
+    footer li {
+        font-size: 1.7rem;
+    }
+    footer a,
+    footer a:link,
+    footer a:visited {
+        font-size: 1.2em;
+    }
+}
